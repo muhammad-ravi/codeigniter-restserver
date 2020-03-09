@@ -52,8 +52,9 @@ Here is a basic example. This controller, which should be saved as `Api.php`, ca
 
 ```php
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
+defined('BASEPATH') OR exit('No direct script access allowed');
+require APPPATH.'/libraries/RestController.php';
 use chriskacerguis\RestServer\RestController;
 
 class Api extends RestController {
